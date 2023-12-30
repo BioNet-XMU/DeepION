@@ -25,3 +25,28 @@ __Schematic overflow of the DeepION model__. The input original ion image is fir
 # Quickly start
 
 ## Input
+(1) The preprocessed MSI matrix data with two-dimensional shape [X*Y,P], where X and Y represent the pixel numbers of horizontal and vertical coordinates of MSI data, and P represents the number of ions.
+
+(2) The preprocessed MSI peak data with one-dimensional shape [P,1], where P represents the number of ions.
+
+(3) The inputing MSI data shape.
+
+(4) "COL" mode or "ISO" mode that selected.
+
+(5) "positive" or "negative" ion mode that MSI experiments used.
+
+(6) The number of searched co-locolized ions for each ion.
+
+(7) The filename of output.
+
+## Run DeepION model
+
+cd to the DeepION fold
+
+If you want to perfrom DeepION for co-localized ion searching, taking fetus mouse brain section in positive mode as an example, run:
+
+If you want to perfrom DeepION for isotope discovery, taking fetus mouse brain section in positive mode as an example, run:
+
+# Contact
+
+Please contact me if you need any help: gl5121405@gmail.com
