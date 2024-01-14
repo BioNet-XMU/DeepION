@@ -59,7 +59,7 @@ If you want to perfrom DeepION for isotope discovery, taking rat brain section i
 
 # Acknowledge
 
-We would like to express our gratitude to the package developers of "boly_pytorch" and "kornia"
+We thank the package developers of "boly_pytorch" and "kornia"
 
 # Contact
 
