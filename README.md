@@ -11,16 +11,22 @@ __Schematic overflow of the DeepION model__. The input original ion image is fir
 # Requirement
 
     python == 3.5, 3.6 or 3.7
+
+    scikit-learn == 0.19.1
     
     pytorch == 1.8.2
-    
-    opencv == 4.5.3
-    
-    matplotlib == 2.2.2
-
+        
     numpy >= 1.8.0
     
     umap == 0.5.1
+
+    typing == 3.6.4
+
+    torchvision == 0.11.3
+    
+    kornia == 0.4.1 
+    
+    boly_pytorch
 
 # Quickly start
 
@@ -43,9 +49,17 @@ __Schematic overflow of the DeepION model__. The input original ion image is fir
 
 cd to the DeepION fold
 
-If you want to perfrom DeepION for co-localized ion searching, taking fetus mouse brain section in positive mode as an example, run:
+If you want to perfrom DeepION for co-localized ion searching, taking rat brain section in positive mode as an example, run:
 
-If you want to perfrom DeepION for isotope discovery, taking fetus mouse brain section in positive mode as an example, run:
+    python run.py --input_Matrix .../DATASET/Pos_brain_data_matrix.txt --input_PeakList .../DATASET/Pos_brain_data_peak.csv --input_shape 198 422 --mode COL --ion_mode positive --num 5 --output_file Pos_COL_result
+    
+If you want to perfrom DeepION for isotope discovery, taking rat brain section in positive mode as an example, run:
+
+    python run.py --input_Matrix .../DATASET/Pos_brain_data_matrix.txt --input_PeakList .../DATASET/Pos_brain_data_peak.csv --input_shape 198 422 --mode ISO --ion_mode positive --output_file Pos_ISO_result
+
+# Acknowledge
+
+We would like to express our gratitude to the package developers of "boly_pytorch" and "Kornia"
 
 # Contact
 
