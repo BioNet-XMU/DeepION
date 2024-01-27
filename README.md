@@ -4,6 +4,7 @@ DeepION is a deep learning-based low-dimensional representation model of ion ima
 # Overview of DeepION
 <div align=center>
 <img src="https://github.com/gankLei-X/DeepION/assets/70273368/7aab5832-d2e9-448c-838c-6f697993aa2f" width="800" height="480" /><br/>
+</div>
 
 __Schematic overflow of the DeepION model__. The input original ion image is first augmented to two views using the augmentation operation "T" , where “COL” mode used the augmentation combination of color jitter, filtering, Poisson noise, random missing, ‘ISO’ mode conduct the intensity-dependent missing additively. Then, encoder module utilizes ResNet18 to capture the relevant spatial patterns from two augmented views to generate the vector representation. The projection module and prediction module ensure the encoder module achieving stable and meaningful ion image representation, in which multi-layer perceptron is applied. These three modules are trained to maximize similarity using the contrastive loss. After training is completed, the dimensionality reduction module is implemented by the UMAP algorithm to achieve the final representation O for downstream tasks. 
 
